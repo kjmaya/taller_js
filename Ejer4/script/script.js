@@ -1,14 +1,24 @@
-const nombre = document.querySelector("input[name='nombre']").value;
-const materia = document.querySelector("input[name='materia']").value;
-const nota1 = parseFloat(document.querySelector("input[name='nota1']").value);
-const nota2 = parseFloat(document.querySelector("input[name='nota2']").value);
-const nota3 = parseFloat(document.querySelector("input[name='nota3']").value);
-const promedio = (nota1 + nota2 + nota3) / 3;
-let mensaje;
-if (promedio >= 3.0) {
-  mensaje = "Felicitaciones, pasaste la materia!";
-} else {
-  mensaje = "Lo siento, no pasaste la materia.";
+document.addEventListener("DOMContentLoaded", function() {
+  const calcularButton = document.getElementById("calcular");
+  calcularButton.addEventListener("click", function() {
+      calcularPromedio();
+  });
+});
+
+function calcularPromedio() {
+  const materia = document.getElementById('materia').value;
+  const nota1 = parseFloat(document.getElementById('nota1').value);
+  const nota2 = parseFloat(document.getElementById('nota2').value);
+  const nota3 = parseFloat(document.getElementById('nota3').value);
+
+  const promedio = (nota1 + nota2 + nota3) / 3;
+
+  const resultadoElement = document.getElementById('resultado');
+  resultadoElement.innerHTML = `${materia} <br> su nota es ${promedio.toFixed(2)}.`;
+
+  if (promedio >= 3.0) {
+      resultadoElement.innerHTML += ` <br> Felicitaciones pasaste la materia ${materia}.`;
+  } else {
+      resultadoElement.innerHTML += ` Lo siento, no pasaste la materia ${materia}.`;
+  }
 }
-document.querySelector("h2").textContent = mensaje;
-document.querySelector("p").textContent = `Su nota es: ${promedio}`;

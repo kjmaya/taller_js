@@ -1,18 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Aplicación de notas</title>
+    <title>Calculadora de Notas</title>
 </head>
 <body>
-  <h2>Aplicación de notas</h2>
-  <form action="" method="post">
-    <input type="text" name="nombre" placeholder="Ingrese su nombre">
-    <input type="text" name="materia" placeholder="Ingrese la materia">
-    <input type="number" name="nota1" placeholder="Ingrese la nota 1">
-    <input type="number" name="nota2" placeholder="Ingrese la nota 2">
-    <input type="number" name="nota3" placeholder="Ingrese la nota 3">
-    <input type="submit" value="Calcular">
-  </form>
-  <script src="script/script.js"></script>
+    <h1>Calculadora de Notas</h1>
+
+    <form id="gradeCalculator">
+        <label for="materia">Materia:</label>
+        <input type="text" id="materia" required><br><br>
+
+        <label for="nota1">Nota 1:</label>
+        <input type="number" id="nota1" step="0.01" required><br><br>
+
+        <label for="nota2">Nota 2:</label>
+        <input type="number" id="nota2" step="0.01" required><br><br>
+
+        <label for="nota3">Nota 3:</label>
+        <input type="number" id="nota3" step="0.01" required><br><br>
+
+        <button type="button" id="calcular">Calcular Promedio</button>
+    </form>
+
+    <p id="resultado"></p>
+
+    <script src="/Ejer4/script/script.js"></script>
 </body>
 </html>
