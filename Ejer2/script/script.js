@@ -7,6 +7,9 @@ function verificar_tipo_dato(valor) {
     if (!/[a-zA-Z]+/.test(valor) && /[0-9]+/.test(valor)) {
         return "número";
     }
+    if (/[a-zA-Z]+/.test(valor) && /[0-9]+/.test(valor)) {
+        return "texto";
+    }    
     return "El campo esta vacio";
 }
 const campo_texto = document.querySelector("#valor");

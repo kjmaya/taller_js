@@ -13,7 +13,6 @@ body {
 
 .card {
     position: relative;
-    
     padding: 30px;
     border-radius: 15px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
@@ -46,7 +45,7 @@ body {
         right: 0;
     }
 
-    color: #ffffff;
+    color: #2f0027;
     font-size: 16px;
     line-height: 1.5;
 }
@@ -60,19 +59,3 @@ body {
 .inputs::placeholder{
     color: #fff;
 }
-.btn {
-    padding: 10px 20px;
-    background-color: #cc80ff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .btn:hover {
-    background-color: #b546ff;
-  }
-  
-  .btn:active {
-    background-color: #440071;
-  }

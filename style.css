@@ -1,0 +1,31 @@
+body {
+    background: url('/9d70579de938783b896e07f0516db3f0.jpg') center/cover no-repeat;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction:row;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.btn {
+    padding: 10px 20px;
+    background-color: #cc80ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    margin: 10px;
+
+  }
+  
+  .btn:hover {
+    background-color: #b546ff;
+  }
+  
+  .btn:active {
+    background-color: #440071;
+  }

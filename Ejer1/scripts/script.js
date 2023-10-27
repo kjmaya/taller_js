@@ -5,5 +5,5 @@ const characterCount = document.getElementById('characterCount');
 countButton.addEventListener('click', () => {
   const text = inputText.value;
   const characterCountValue = text.length;
-  characterCount.textContent = `Cantidad de caracte: ${characterCountValue}`;
+  characterCount.textContent = `Cantidad de caracteres: ${characterCountValue}`;
 });
