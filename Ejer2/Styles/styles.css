@@ -40,7 +40,6 @@ body {
         position: absolute;
         top: 0;
         bottom: 20px;
-        /* Ajusta este valor según tu preferencia */
         left: 0;
         right: 0;
     }
@@ -59,3 +58,20 @@ body {
 .inputs::placeholder{
     color: #fff;
 }
+.btn {
+    padding: 10px 20px;
+    background-color: #cc80ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .btn:hover {
+    background-color: #b546ff;
+  }
+  
+  .btn:active {
+    background-color: #440071;
+  }
